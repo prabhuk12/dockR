@@ -29,8 +29,9 @@ RUN apt-get update	\
 	&& cd /opt/semosshome \
 	&& git clone https://github.com/prabhuk12/dockR \
 	&& cp /opt/semosshome/dockR/Rprofile.site /etc/R/Rprofile.site \
+	&& cp /opt/semosshome/dockR/Rserve.conf /etc \
 	&& Rscript /opt/semosshome/dockR/Packages.R \
 	&& apt-get clean all
 #	&& git clone https://github.com/prabhuk12/nginx
 
-ENTRYPOINT ["R", "CMD", "Rserve", "--port=6311"]
+CMD ["R", "CMD", "Rserve", "--RS-port=6311"]
