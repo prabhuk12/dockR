@@ -34,4 +34,6 @@ RUN apt-get update	\
 	&& apt-get clean all
 #	&& git clone https://github.com/prabhuk12/nginx
 
-CMD ["R", "CMD", "Rserve", "--RS-port=6311"]
+WORKDIR /opt/semosshome/dockR
+
+CMD ["Rscript", "start.R]
