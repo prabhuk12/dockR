@@ -1,5 +1,4 @@
 #Install Rserve
-install.packages('Rserve', repos='http://cran.r-project.org')
  
 #Include Rserve library
 library(Rserve)
