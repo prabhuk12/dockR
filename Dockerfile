@@ -36,4 +36,4 @@ RUN apt-get update	\
 
 WORKDIR /opt/semosshome/dockR
 
-CMD ["Rscript", "start.R]
+CMD ["Rscript", "start.R"]
