@@ -6,7 +6,7 @@
 FROM debian
 
 LABEL maintainer="semoss@semoss.org"
-
+ 
  
 # Install Java
 # Install git
